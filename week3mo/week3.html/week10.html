@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card Layout Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center; /* Center cards horizontally */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .card-container {
+            display: flex; 
+            justify-content: space-between; 
+            max-width: 1200px;
+            width: 100%; 
+        }
+
+        .card {
+            background-color: #f9f9f9; 
+            border: 1px solid #ddd; 
+            border-radius: 8px; 
+            padding: 20px; 
+            margin: 10px; 
+            width: calc(33% - 20px); 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+            transition: transform 0.2s; 
+        }
+
+        .card:hover {
+            transform: scale(1.05); 
+        }
+        h3{
+            color: aqua;
+            background-attachment: fixed;
+        }
+        
+    </style>
+</head>
+<body>
+<div class="card-container">
+    <div class="card">
+        <h3>Title 1</h3>
+        <p>It contains information of tittle1</p>
+    </div>
+    <div class="card">
+        <h3>Title 2</h3>
+        <p>It contains information of tittle2</p>
+    </div>
+    <div class="card">
+        <h3> Title 3</h3>
+        <p>It contains information of tittle3</p>
+    </div>
+</div>
+
+</body>
+</html>

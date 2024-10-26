@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .button {
+            position: relative;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #007bff;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .button::before {
+            content: '★'; 
+            margin-right: 8px;
+            font-size: 1.2em; 
+            vertical-align: middle; 
+        }
+
+        .button:hover {
+            background-color: #0ee367d3; 
+        }
+    </style>
+</head>
+<body>
+    <button class="button">Press the Buttpn</button>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fade In Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f4f4f4;
+        }
+
+        .fade-in {
+            opacity: 0;
+            animation: fadeIn 5s forwards; 
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="fade-in"> fade in!</div>
+</body>
+</html>
+

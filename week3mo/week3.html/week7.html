@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .model {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1000; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            background-color: rgba(0, 0, 0, 0.5); /* Black with opacity */
+        }
+
+        .model-content {
+            background-color: #fff;
+            margin: 15% auto; /* Centered */
+            padding: 20px;
+            width: 80%; /* Width of the modal */
+            max-width: 400px; /* Max width */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        .close {
+            cursor: pointer;
+            float: right;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+
+<h2>Simple Model Example</h2>
+<button id="openModel">Open Model</button>
+
+<div id="myModel" class="model">
+    <div class="model-content">
+        <span class="close" id="closeModel">&times;</span>
+        <h2>Model Header</h2>
+        <p>This is a simple model popup!</p>
+    </div>
+</div>
+
+<script>
+    const modal = document.getElementById("myModel");
+    const openModalBtn = document.getElementById("openModel");
+    const closeModalBtn = document.getElementById("closeModel");
+
+    // Open the modal
+    openModelBtn.onclick = () => {
+        model.style.display = "block";
+    };
+
+    // Close the modal
+    closeModelBtn.onclick = () => {
+        model.style.display = "none";
+    };
+    window.onclick = (event) => {
+        if (event.target === model) {
+            model.style.display = "none";
+        }
+    };
+</script>
+
+</body>
+</html>

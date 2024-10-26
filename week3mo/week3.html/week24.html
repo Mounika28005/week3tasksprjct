@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            background-color: #f4f4f4;
+        }
+
+        .wiggle-button {
+            background-color: #00ff95e8; 
+            color: white; 
+            padding: 10px 20px;
+            border: none; 
+            border-radius: 5px; 
+            cursor: pointer; 
+            font-size: 16px; 
+            transition: background-color 0.3s ease; 
+        }
+
+        .wiggle-button:hover {
+            animation: wiggle 0.5s ease;
+        }
+
+        @keyframes wiggle {
+            0% { transform: rotate(0deg); }
+            20% { transform: rotate(5deg); }
+            40% { transform: rotate(-5deg); }
+            60% { transform: rotate(3deg); }
+            80% { transform: rotate(-3deg); }
+            100% { transform: rotate(0deg); }
+        }
+    </style>
+</head>
+<body>
+    <button class="wiggle-button">Hover Me!</button>
+</body>
+</html>

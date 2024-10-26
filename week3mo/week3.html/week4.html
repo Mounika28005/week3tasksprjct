@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .tooltip {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+            border-radius: 4px;
+            z-index: 10;
+        }
+
+        .tooltip-button {
+            position: relative; 
+            margin: 50px;
+        }
+
+        .tooltip-button:hover .tooltip {
+            display: block; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="tooltip-button">
+    <button>Tooltip</button>
+    <div class="tooltip">This is a tooltip!</div>
+</div>
+
+</body>
+</html>
